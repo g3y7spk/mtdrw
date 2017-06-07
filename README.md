@@ -1,6 +1,6 @@
 ## About
 
-mtdrw is a loadable kernel module to make the read-only MTD device writable while the module is loaded.
+mtdrw is a Linux loadable kernel module to make the read-only MTD device writable while the module is loaded.
 
 This module is for Atmark Techno's Armadillo-4x0 series CPU board running Linux v2.6.26.
 
@@ -35,8 +35,9 @@ $ cd
 $ git clone https://github.com/g3y7spk/mtdrw.git
 $ cd mtdrw
 $ make
-
 ```
+After build, you can find the loadable kernel module (mtdrw.ko) in the current directory.
+
 NOTE: If you are using the different version of kernel then change KERNEL_SRC in mtdrw/Makefile.
 
 ``` r
