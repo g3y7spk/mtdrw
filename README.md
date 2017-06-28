@@ -19,7 +19,7 @@ Using this module, you can update the bootloader of Armadillo-4x0 using netflash
 
 The build of mtdrw should be done on ATDE5. ATDE5 is a cross compilation environment for Armadillo-4x0 running on the VMware virtual machine. Please set up ATDE5 before doing the build. For detail please see <http://armadillo.atmark-techno.com/atde>.
 
-Build the kernel for Armadillo-4x0
+First build the kernel for Armadillo-4x0
 ``` r
 $ cd
 $ wget http://armadillo.atmark-techno.com/files/downloads/armadillo-420/source/kernel/linux-2.6.26-at27.tar.gz
@@ -29,7 +29,7 @@ $ make ARCH=arm armadillo400_defconfig
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 ```
 
-Build mtdrw.
+Then build mtdrw.
 ``` r
 $ cd
 $ git clone https://github.com/g3y7spk/mtdrw.git
@@ -64,7 +64,7 @@ mtdrw has one parameter called *name* and you should specify the name of MTD dev
 * nor.userland
 * nor.config
 
-The command sequence for updating the bootloader of Armadillo-4x0 is illustrated below as an example. You need to execute commands on Armadillo-4x0. Assume that mtdrw.ko and loader-armadillo4x0-v2.2.0.bin are both located in /tmp directory. mtdrw.ko is the loadable kernel module you just built and loader-armadillo4x0-v2.0.0.bin is the bootloader image of Armadillo-4x0 available at <http://armadillo.atmark-techno.com/armadillo-420/downloads-linux2-6-26>.
+The command sequence for updating the bootloader of Armadillo-4x0 is illustrated below as an example. You need to execute commands on Armadillo-4x0. Assume that mtdrw.ko and loader-armadillo4x0-v2.2.0.bin are both located in /tmp directory on Armadillo-4x0. mtdrw.ko is the loadable kernel module you just built and loader-armadillo4x0-v2.0.0.bin is the bootloader image of Armadillo-4x0 available at <http://armadillo.atmark-techno.com/armadillo-420/downloads-linux2-6-26>.
 
 ``` r
 # cd /tmp
