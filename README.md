@@ -19,7 +19,7 @@ Using this module, you can update the bootloader of Armadillo-4x0 using netflash
 
 The build of mtdrw should be done on ATDE5. ATDE5 is a cross compilation environment for Armadillo-4x0 running on the VMware virtual machine. Please set up ATDE5 before doing the build. For detail please see <http://armadillo.atmark-techno.com/atde>.
 
-First build the kernel for Armadillo-4x0
+First build the kernel for Armadillo-4x0.
 ``` r
 $ cd
 $ wget http://armadillo.atmark-techno.com/files/downloads/armadillo-420/source/kernel/linux-2.6.26-at27.tar.gz
