@@ -57,7 +57,7 @@ clean:
 ```
 
 ## Usage
-mtdrw has one parameter called name and you should specify the name of MTD device with it. For Armadillo-4x0, the following names are assigned to MTD devices.
+mtdrw has one parameter called *name* and you should specify the name of MTD device with it. For Armadillo-4x0, the following names are assigned to MTD devices.
 
 * nor.bootloader
 * nor.kernel
