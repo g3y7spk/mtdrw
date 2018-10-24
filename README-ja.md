@@ -1,13 +1,13 @@
 ## 概要
 
-mtdrw は Linux 向けのローダブル・カーネルモジュールで、本モジュールをロードしている間、リードオンリーの MTD デバイスをリードライト状態とすることができます。
+mtdrw は Linux 向けのローダブル・カーネルモジュールで、本モジュールをロードしている間、論理的にリードオンリーとなっている MTD デバイスをリードライト状態とすることができます。
 
-本モジュールは Linux v2.6.26 が動作する Atmark Techno 社の Armadillo-4x0 シリーズの CPU ボード専用です。
+本モジュールは Linux v2.6.26-at*X* が動作する Atmark Techno 社の Armadillo-4x0 シリーズの CPU ボード専用です。
 
 * http://armadillo.atmark-techno.com/armadillo-420
 * http://armadillo.atmark-techno.com/armadillo-440
 
-Armadillo-4x0 でより新しい Linux v3.14 を使用している場合は、下記のように本モジュールと同等のことを行うための sysfs インタフェースが既に提供されているため、本モジュールを使用する必要はありません。
+Armadillo-4x0 でより新しい Linux v3.14-at*X* を使用している場合は、下記のように本モジュールと同等のことを行うための sysfs インタフェースが既に提供されているため、本モジュールを使用する必要はありません。
 
 ``` r
 # echo 0 > /sys/class/mtd/mtd0/ro
