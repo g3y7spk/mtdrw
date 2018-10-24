@@ -1,13 +1,13 @@
 ## About
 
-mtdrw is a Linux loadable kernel module to make the read-only MTD device writable while the module is loaded.
+mtdrw is a Linux loadable kernel module to make the logically read-only MTD device writable while the module is loaded.
 
-This module is for Atmark Techno's Armadillo-4x0 series CPU board running Linux v2.6.26.
+This module is for Atmark Techno's Armadillo-4x0 series CPU board running Linux v2.6.26-at*X*.
 
 * http://armadillo.atmark-techno.com/armadillo-420
 * http://armadillo.atmark-techno.com/armadillo-440
 
-You don't need this module when you are using newer Linux v3.14 for Armadillo-4x0 because the MTD driver of Linux v3.14 offers the sysfs interface to do the same like:
+You don't need this module when you are using newer Linux v3.14-at*X* for Armadillo-4x0 because the MTD driver of Linux v3.14-at*X* offers the sysfs interface to do the same like:
 
 ``` r
 # echo 0 > /sys/class/mtd/mtd0/ro
